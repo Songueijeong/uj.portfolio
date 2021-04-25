@@ -205,3 +205,96 @@ button {
 .skill {
   margin-bottom: 8px;
 }
+
+/* Work */
+.category__button {
+  border: 1px solid var(--color-dark-white);
+  border-radius: var(--size-border-radius);
+  font-size: var(--font-regular);
+  padding: 8px 48px;
+}
+
+.work__categories {
+  margin: 40px;
+}
+
+.category__button.active,
+.category__button:hover {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+}
+
+.category__button.active .category__count,
+.category__button:hover .category__count {
+  opacity: 1;
+  top: 0;
+}
+
+.category__count {
+  background-color: var(--color-orange);
+  border-radius: 50%;
+  color: var(--color-white);
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  position: relative;
+  top: -20px;
+  left: 4px;
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+.work__projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin: 5px;
+}
+
+.project__img {
+  max-width: 100%;
+  max-height: 100%;
+  align-self: center;
+}
+
+.project__discription {
+  position: absolute;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+.project {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.work__projects:hover .project__discription {
+  opacity: 0.8;
+}
+
+.project__discription h3 {
+  color: var(--color-white);
+}
+
+.project__discription h3:after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 50%;
+  width: 25px;
+  height: 2px;
+  margin-left: -12px;
+  margin-top: 8px;
+  background-color: var(--color-dark-white);
+}
