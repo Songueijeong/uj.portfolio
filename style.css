@@ -310,6 +310,9 @@ button {
 
 .testimonial {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
   margin: 32px 0;
 }
 
