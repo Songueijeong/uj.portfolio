@@ -328,3 +328,28 @@ button {
   justify-content: center;
   border-radius: var(--size-border-radius);
 }
+
+/* Contact */
+#contact {
+  background-color: var(--color-pink);
+}
+
+.contact__title,
+.contact__email,
+.contact__rights {
+  color: white;
+}
+
+.contact__title {
+  margin: 32px 0;
+}
+
+.contact__links {
+  font-size: var(--font-medium);
+  margin: 24px 0;
+}
+
+.contact__links i:hover {
+  transform: scale(1.1);
+  color: var(--color-yellow);
+}
